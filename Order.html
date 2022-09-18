@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order Medicine</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form action="">
+<h2>To Order Medicines</h2>
+<p>Name: <input type="text"name="name"> </p>
+<p>Kindly post the picture of your prescription</p>
+<input type="file" accept="image/*" id="file-input" />
+<script>
+const fileInput = document.getElementById('file-input');
+fileInput.addEventListener('change', (e) =>
+doSomethingWithFiles(e.target.files),
+);
+</script>
+<p>Address : <textarea name="address" id="address" cols="40" rows="8"></textarea></p>
+<p>Pincode : <input type="number" name="pincode"> </p>
+<p>Name of the Medicines: <textarea name="medicine" id="medicines" cols="40" rows="4"></textarea></p>
+<p>Respective Quantities:<textarea name="medicine" id="medicines" cols="40" rows="4"></textarea></p>
+<br> <h3>Which type of drone would you want for delivery ? </h3><br/>
+<input type = "radio" name = "chkDrone" value = "fxdhybrid" / > Fixed Hybrid <br/>
+<input type = "radio" name = "chkDrone" value = "snglRotor" / >Single Rotor Drone <br/>
+<input type = "radio" name = "chkDrone" value = "mltRotor" /> Multi Rotor Drone <br/>
+<h3>Select delivery type </h3>
+<input type ="radio" name = "chkdlvry" value ="Standard Delivery" />Standard Delivery(within 24 hours)</br>
+<input type ="radio" name ="chkdlvry" value ="Speed Delivery"/> Speed Delivery(within 6 hours ) </br>
+<h3>Contact Information</h3>
+<p>Phone Number : <input type="number" name="Phone Number"></p>
+<p>Email Address : <input type="email" name="Email" > </p>
+<button><h4>Save and Continue</h4></button>
+</form>
+</body>
+</html>

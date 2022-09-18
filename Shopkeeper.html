@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shopkeeper</title>
+<link rel="stylesheet" href="shop.css">
+</head>
+<body>
+<form action="">
+<h2>Shop Owner Information</h2>
+<p>Name: <input type="text"name="name"> </p>
+<p>Name of your Medical Store: <input type="text" name="name of store"> </p>
+<p> Insert image of your lincense </p>
+<input type="file" accept="image/*" id="file-input" />
+<script>
+  const fileInput = document.getElementById('file-input');
+
+  fileInput.addEventListener('change', (e) =>
+    doSomethingWithFiles(e.target.files),
+  );
+</script>
+<p>Address of the store : <textarea name="'address" id="address" cols="40" rows="8"></textarea></p>
+<p>Pincode : <input type="number" name="pincode"> </p>
+<h3>Contact Information</h3>
+<p>Phone Number : <input type="number" name="Phone Number"></p>
+<p>Email Address : <input type="email" name="Email" > </p>
+<p> Your Aadhar Number : <input type ="number" name ="Aadhar number"></p>
+<button><h4>Save and Continue</h4></button>
+</form>
+</body>
+</html>
